@@ -44,7 +44,7 @@ const server = http.createServer(async (req, res) => {
         console.log('Chat request received, messages:', data.messages.length);
 
         const payload = JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
+          model: 'claude-haiku-4-5-20251001',
           max_tokens: 1000,
           system: SYSTEM_PROMPT,
           messages: data.messages
